@@ -14,21 +14,24 @@ const SideBar = () => {
     navigate('/');
   }
 
-  const navigateProject = () => {
-    navigate('/projects');
+  const navigateEvents = () => {
+    navigate('/events');
   }
 
   const navigateInbox = () => {
     navigate('/inbox');
   }
   
+  const navigateProfile = () => {
+    navigate('/profile');
+  }
   return (
     <div className="sidebar">
       <div className="sidebar-upper">
         {/* <img src='' alt='' className='' /> */}
         <div className="sidebar-navlinks">
           <div className="sidebar-nav" onClick={navigateHome}>discover</div>
-          <div className="sidebar-nav" onClick={navigateProject}>projects</div>
+          <div className="sidebar-nav" onClick={navigateEvents}>events</div>
           <div className="sidebar-nav" onClick={navigateInbox}>inbox</div>
         </div>
         <div className="sidebar-introduction">
@@ -44,7 +47,7 @@ const SideBar = () => {
         </div>
       </div>
       <div className="sidebar-lower">
-        <div className="sidebar-profile">profile</div>
+        <div className="sidebar-profile" onClick={navigateProfile}>profile</div>
         {isOpenAccessories && (
           <div className="sidebar-access-float">
             <div>kedarkamaf@gmail.com</div>
