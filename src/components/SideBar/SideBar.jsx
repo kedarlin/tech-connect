@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const SideBar = () => {
-  const [isOpenAccessories, setIsOpenAccessories] = useState(true);
+  const [isOpenAccessories, setIsOpenAccessories] = useState(false);
   const navigate = useNavigate();
   const toggleAccessories = () => {
     setIsOpenAccessories(!isOpenAccessories);
