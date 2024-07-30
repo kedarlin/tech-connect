@@ -1,0 +1,83 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    color: #b4b4b4b3;
+    height: 100%;
+    max-width: 250px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.sidebar-upper {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-introduction {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sidebar-navlinks {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar-lower {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+    position: relative;
+}
+.sidebar-accessories {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sidebar-username {
+    margin: 0;
+    color: #ffffff;
+}
+
+.sidebar-profile-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 20px;
+    filter: grayscale(1);
+}
+
+.sidebar-nav:hover, .sidebar-profile:hover {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.sidebar-accessories:hover {
+    cursor: pointer;
+}
+
+.sidebar-accessories:hover > .sidebar-profile-image {
+    filter: grayscale(0);
+}
+
+.sidebar-access-float {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    border: #cccccc solid 1px;
+    background-color: #0a0a0a;
+    border-radius: 10px;
+    padding: 15px 10px;
+    bottom: 60px;
+    z-index: 1;
+    color: #ffffff;
+}
