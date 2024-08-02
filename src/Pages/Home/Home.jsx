@@ -1,14 +1,17 @@
 import { FaArrowRight } from "react-icons/fa";
-import SideBar from "../../components/SideBar/SideBar";
+// import SideBar from "../../components/SideBar/SideBar";
 import "./Home.css";
+import NavBar from "../../components/NavBar/NavBar";
 
 const Home = () => {
   return (
     <div className="home">
-      <SideBar />
+      <NavBar />
       <div className="home-container">
         <div className="home-welcome">
-          Wassup doggie! <br /> Having fun!?
+          Wassup doggie!
+          <br />
+          Having fun!?
         </div>
         <div className="home-chat">
           <input

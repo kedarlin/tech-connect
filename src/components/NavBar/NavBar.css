@@ -1,0 +1,74 @@
+.navbar {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    color: #b4b4b4b3;
+    font-size: 18px;
+    background-color: #000000;
+}
+.navbar-left, .navbar-items {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-logo-icon{
+    height: 40px;
+    width: 40px;
+}
+
+
+
+
+.navbar-accessories {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-username {
+    margin: 0;
+    color: #ffffff;
+}
+
+.navbar-profile-image {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin-right: 20px;
+    filter: grayscale(1);
+}
+
+.navbar-item:hover, .navbar-profile:hover {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.navbar-accessories:hover {
+    cursor: pointer;
+}
+
+.navbar-accessories:hover > .navbar-profile-image {
+    filter: grayscale(0);
+}
+
+.navbar-access-float {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    border: #cccccc solid 1px;
+    background-color: #0a0a0a;
+    border-radius: 10px;
+    padding: 15px 10px;
+    top: 60px;
+    right: 20px;
+    z-index: 1;
+    color: #ffffff;
+}
