@@ -4,6 +4,7 @@
     margin: 20px;
     gap: 10px;
     border: #b4b4b457 solid 1px;
+    padding-bottom: 10px;
 }
 .eventspost-poster {
     height: 200px;
@@ -47,11 +48,21 @@
 .eventspost-profile:hover > .eventspost-poster-profile{
     filter: grayscale(0);
 }
-.eventspost-profile-details{
-    margin-top: 10px;
-}
 .eventspost-profile-details p {
     margin: 0;
     font-size: 14px;
     margin: 0px 15px;
+}
+.eventspost-poster-desc{
+    margin-left: 10px;
+    font-size: 14px;
+    color: #696969;
+    font-weight: 500;
+}
+.eventspost-poster-tags{
+    margin-left: 10px;
+    padding: 0px 10px;
+    width: fit-content;
+    border-radius: 5px;
+    background-color:darkblue;
 }
